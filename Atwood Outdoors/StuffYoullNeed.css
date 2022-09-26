@@ -1,0 +1,31 @@
+.navbar{
+    background-color: seagreen;
+}
+
+.button-1{
+    color: yellow;
+}
+
+.button-1 button{
+    background-color: blueviolet;
+    color: yellow;
+}
+.title{
+   color: yellow;
+}
+
+.img{
+    background-repeat: no-repeat;
+}
+
+.links{
+    background-image: url(compass.jpg);
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+}
+
+.title-1{
+    color: burlywood;
+}
+

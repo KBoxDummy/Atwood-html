@@ -1,0 +1,58 @@
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    
+}
+
+.main{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+.navbar{
+    background-color: seagreen;
+    height: 150px;
+    width: 100%;
+}
+
+.button-1{
+    color: burlywood;
+}
+
+.button-1 button{
+    background-color: blueviolet;
+    color: burlywood;
+}
+
+.title{
+    
+    color: brown;
+}
+
+.title-1{
+    color: burlywood;
+}
+
+.img-1{
+    background-image: url(pic1.jpg);
+    height: 440px;
+    width: 500px;
+}
+
+.links{
+    background-image: url(compass.jpg);
+    height: 50px;
+    width: 50px;
+}
+
+a{
+    background-color: blueviolet;
+    color: burlywood;
+}
+

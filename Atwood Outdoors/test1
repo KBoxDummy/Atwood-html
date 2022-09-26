@@ -1,0 +1,153 @@
+<header>
+        <nav class="navbar">
+            <a href="#" class="nav-branding"></a>
+
+                <ul class="nav-menu">
+                    
+                    <li class="nav-item">
+                        <a href="coolstuff.html" class="nav-link">Cool Stuff
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="skills.html" class="nav-link">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+        </nav>
+    </header>
+
+
+
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    header{
+        background-color: lawngreen;
+    }
+    
+    button{
+        color: red;
+        background-color: blueviolet;
+    }
+    
+    li{
+        list-style: none;
+    }
+    
+    a{
+        color: blueviolet;
+        text-decoration: none;
+    }
+    .para-2{
+        text-align: right;
+    }
+    .navbar{
+        min-height: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+    }
+    
+    .nav-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+    }
+    
+    .nav-branding{
+        font-size: 2rem;
+    }
+    
+    .nav-link{
+        transition: 0.7s ease;
+    }
+    
+    .nav-link:hover{
+        color: red;
+    }
+    
+    .hamburger{
+        display: none;
+        cursor: grab;
+    }
+    
+    .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        color: white;
+    }
+    
+    @media(max-width:768px){
+        .hamburger{
+            display: block;
+        }
+        .hamburger.active .bar:nth-child(2){
+            opacity: 0;
+        }
+    
+        .hamburger.active .bar:nth-child(1){
+                transform: translateY(8px) rotate(45deg); 
+        }  
+        
+        .hamburger.active .bar:nth-child(3){
+            transform: translateY(-8px) rotate(-45deg); 
+        }
+        
+        .nav-menu{
+            position: fixed;
+            left: -100%;
+            top: 70px;
+            gap: 0;
+            flex-direction: column;
+            background-color: red;
+            width: 100%;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .nav-link{
+            margin: 16px 0;
+        }
+    
+        .nav-menu.active{
+            left: 0;
+        }
+        
+    }
+    
+    .title{
+        color: red;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+    
+    img{
+        min-width: 1250px;
+        min-height: 300px;
+        background-repeat: no-repeat;
+    }
+
+
+    ul li a:hover{
+        background-color: gold;
+        text-align: center;
+    }
+    
